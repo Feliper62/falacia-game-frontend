@@ -1,0 +1,13 @@
+body {
+    /* Define o gradiente linear */
+    background: linear-gradient(to bottom, #0073e6, #ff6b6b);
+    /* Isso garante que o gradiente ocupe toda a altura da página */
+    min-height: 100vh;
+    /* Isso remove a margem padrão do corpo */
+    margin: 0;
+    /* Isso define o estilo de fonte padrão para todo o corpo */
+    font-family: Arial, sans-serif;
+    /* Define a cor padrão do texto em branco */
+    color: white;
+  }
+  
