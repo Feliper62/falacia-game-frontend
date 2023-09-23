@@ -6,8 +6,10 @@ body {
     /* Isso remove a margem padrão do corpo */
     margin: 0;
     /* Isso define o estilo de fonte padrão para todo o corpo */
-    font-family: Arial, sans-serif;
+    font-family: Kanit;
     /* Define a cor padrão do texto em branco */
     color: white;
+    
+   
   }
   
