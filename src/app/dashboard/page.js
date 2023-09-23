@@ -1,9 +1,7 @@
 export default function Dashboard() {
     return (  
         <main>
-            <header>
-                <h1>FALACIA</h1>
-            </header>
+            
             <div>
                 <nav className="nav">
                     <a href="#" id="jogar-sozinho">JOGAR SOZINHO</a>

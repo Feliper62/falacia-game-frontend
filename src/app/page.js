@@ -4,8 +4,18 @@ export default function Home() {
   return (
     <main>
       <Titulo/>
-      <nav className="nav">
-        <a href="/dashboard" id="DASHBOARD">DASHBOARD</a></nav>
+      <nav>
+        <a href="/criar_sala" id="criar_sala">Criar Sala</a>
+      </nav>
+      <nav>
+        <a href="/acessar_sala" id="acessar_sala">Acessar Sala</a>
+      </nav>
+      <nav>
+        <a href="/como_jogar" id="como_jogar">Como Jogar</a>
+      </nav>
+      <nav>
+        <a href="/creditos" id="creditos">Créditos</a>
+      </nav>
     </main>
   )
 }
