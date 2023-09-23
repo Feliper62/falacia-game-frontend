@@ -10,7 +10,7 @@ export default function Home() {
       
         <div>
         <nav>
-        <a className={styles2.Button}href="/criar_sala" id="criar_sala">Criar Sala</a>
+        <a className={styles2.Button}href="pages/criar_sala" id="criar_sala">Criar Sala</a>
       </nav>
       <nav>
         <a className={styles2.Button}href="/acessar_sala" id="acessar_sala">Acessar Sala</a>
