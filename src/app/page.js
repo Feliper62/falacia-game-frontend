@@ -16,6 +16,9 @@ export default function Home() {
       <nav>
         <a href="/creditos" id="creditos">Créditos</a>
       </nav>
+      <nav>
+        <a href="pages/dashboard" id="dashboard">PAGINA TESTE</a>
+      </nav>
     </main>
   )
 }
