@@ -4,7 +4,8 @@
     font-family: Karantina;
     font-size: 100px;
     color: #fff;
-    text-shadow: 5px 5px 0 black;
+    text-shadow: 10px 10px 0 #000;
+    /*-webkit-text-stroke: 0px #000;*/
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
