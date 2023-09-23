@@ -1,0 +1,18 @@
+.btnVoltar {
+    width: 95px;  
+    height: 20px;
+    margin: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        padding: 10px 20px;
+        background-color: #F23078;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 1px 1px 5px #000;
+        font-family: Kanit;
+        font-size: 16px;
+}
