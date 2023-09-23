@@ -1,6 +1,6 @@
-.btnVoltar {
-    width: 95px;  
-    height: 20px;
+.Button {
+    max-width: 95px;  
+    max-height: 20px;
     margin: 10px;
         flex-wrap: wrap;
         flex-direction: column;

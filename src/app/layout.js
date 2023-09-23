@@ -14,6 +14,8 @@ import Titulo from './components/Titulo'
 export default function RootLayout({ children }) {
   return (
     <>
+      <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'></link>
+      <link href='https://fonts.googleapis.com/css?family=Karantina' rel='stylesheet'></link>
       <html lang="pt-br"/>
       
        <div>
