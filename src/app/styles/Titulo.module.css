@@ -1,0 +1,11 @@
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Karantina;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 5px 5px 0 black;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
