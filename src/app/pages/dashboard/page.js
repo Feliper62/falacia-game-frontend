@@ -19,6 +19,9 @@ export default function Dashboard() {
                     <h2>Menu</h2>
                     <p>Selecione uma opção:</p>
                 </div>
+                <div>
+                                        
+                </div>
             </section>
         </main>
         

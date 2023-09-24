@@ -18,7 +18,7 @@ export default function Home() {
           <Button text="Criar Sala" href="pages/criar_sala" id="criar_sala" />
         </nav>
         <nav>
-          <Button text="Acessar Sala" href="/acessar_sala" id="acessar_sala" />
+          <Button text="Acessar Sala" href="pages/acessar_sala" id="acessar_sala" />
         </nav>
         <nav>
           <Button text="Como Jogar" href="/como_jogar" id="como_jogar" />
