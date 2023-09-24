@@ -1,4 +1,6 @@
 import styles from '../../styles/Titulo.module.css'
+import Button from '../../components/Button'
+import Titulo from '@/app/components/Titulo'
 
 
 export const metadata = {
@@ -9,13 +11,12 @@ export const metadata = {
   export default function AcessarSala(){
     return (
         <>
-            <header className={styles.titulo}>ACESSAR SALA</header>
-            
-            
-        </>
-        
-          
+            <Titulo text='ACESSAR SALA'></Titulo>
            
+               
+
+        </>
+   
       )
 
 

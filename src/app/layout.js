@@ -2,6 +2,7 @@
 import Footer from './components/Footer'
 import './globals.css'
 
+
 /*import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,9 +20,9 @@ export default function RootLayout({ children }) {
       <link href='https://fonts.googleapis.com/css?family=Karantina' rel='stylesheet'></link>
       <html lang="pt-br"/>
       
-       <div>
+       
           {children}
-        </div>
+       
         
         <Footer/>
     </>

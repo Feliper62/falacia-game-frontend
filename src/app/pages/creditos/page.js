@@ -1,4 +1,5 @@
 import styles from '../../styles/Titulo.module.css'
+import Titulo from '@/app/components/Titulo'
 
 export const metadata = {
     title: 'Créditos',
@@ -8,7 +9,7 @@ export const metadata = {
   export default function Creditos(){
     return (
         <>
-          <header className={styles.titulo}>CRÉDITOS</header>
+          <Titulo text='creditos'></Titulo>
         </>
           
            

@@ -1,0 +1,32 @@
+.containerButton {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: flex-start; /* Alinha ao topo */
+    position: absolute;
+    top: 10px; /* Ajuste a posição vertical conforme necessário */
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+    z-index: 999; /* Opcional: ajuste o índice Z se necessário */
+}
+.voltarButton{
+    max-height: 20px;
+    margin: 20px;
+    display: flex;
+    padding: 20px 40px;
+    width: 200px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 6px 15px -7px #000000;
+    font-family: Kanit;
+    text-transform: uppercase;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+	background:linear-gradient(to bottom, #ff75aa 25%, #f23077 100%);
+	background-color:#fa99be;
+    display: flex;
+}
+
+

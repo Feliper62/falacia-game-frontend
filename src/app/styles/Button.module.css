@@ -24,8 +24,7 @@
     flex-direction: column;
     display: flex;
     padding: 20px 40px;
-    width: 300px;
-    background-color: #F23078;
+    width: 200px;
     color: #fff;
     text-decoration: none;
     margin-bottom: 10px;
@@ -50,6 +49,4 @@
 	position:relative;
 	top:1px;
 }
-
-
 

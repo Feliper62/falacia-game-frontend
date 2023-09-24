@@ -10,9 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <header>
-        <Titulo />
-      </header>
+      <Titulo text='falácia'></Titulo>
       <div>
         <nav>
           <Button text="Criar Sala" href="pages/criar_sala" id="criar_sala" />

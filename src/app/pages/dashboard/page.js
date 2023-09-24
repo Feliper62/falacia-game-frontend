@@ -1,9 +1,11 @@
 /* PAGINA DE TESTES */
 
+import Titulo from "@/app/components/Titulo";
+
 export default function Dashboard() {
     return (  
         <main>
-            
+            <Titulo text='PAGINA DE TESTE'></Titulo>
             <div>
                 <nav className="nav">
                     <a href="#" id="jogar-sozinho">JOGAR SOZINHO</a>
