@@ -7,6 +7,8 @@ export default function Dashboard() {
             <div>
                 <nav className="nav">
                     <a href="#" id="jogar-sozinho">JOGAR SOZINHO</a>
+                </nav>
+                <nav>
                     <a href="/" id="VOLTAR">VOLTAR</a>
                 </nav>
             </div>
