@@ -19,11 +19,12 @@
     
 }*/.Button {
     max-height: 20px;
-    margin: 10px;
+    margin: 40px;
     flex-wrap: nowrap;
     flex-direction: column;
     display: flex;
-    padding: 10px 20px;
+    padding: 20px 40px;
+    width: 250px;
     background-color: #F23078;
     color: #fff;
     text-decoration: none;
@@ -33,7 +34,7 @@
     box-shadow: 0px 6px 15px -7px #000000;
     font-family: Kanit;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
     justify-content: center;
     align-items: center;
 	background:linear-gradient(to bottom, #ff75aa 25%, #f23077 100%);

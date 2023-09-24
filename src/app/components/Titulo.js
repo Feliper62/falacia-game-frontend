@@ -5,7 +5,7 @@ export default function Titulo() {
         
     <>
         
-        <h1 className={styles.titulo}>FALACIA</h1>
+        <h1 className={styles.titulo}>FALÁCIA</h1>
                     
     </>
            
