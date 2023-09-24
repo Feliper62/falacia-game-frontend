@@ -21,10 +21,10 @@ export default function Home() {
           <Button text="Acessar Sala" href="pages/acessar_sala" id="acessar_sala" />
         </nav>
         <nav>
-          <Button text="Como Jogar" href="/como_jogar" id="como_jogar" />
+          <Button text="Como Jogar" href="pages/como_jogar" id="como_jogar" />
         </nav>
         <nav>
-          <Button text="Créditos" href="/creditos" id="creditos" />
+          <Button text="Créditos" href="pages/creditos" id="creditos" />
         </nav>
         <nav>
           <Button text="PÁGINA TESTE" href="pages/dashboard" id="dashboard" />
