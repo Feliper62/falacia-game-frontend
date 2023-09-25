@@ -1,4 +1,3 @@
-import styles from '../../styles/Titulo.module.css'
 import Titulo from '@/app/components/Titulo'
 
 export const metadata = {
