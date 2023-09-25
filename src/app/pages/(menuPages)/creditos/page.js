@@ -10,7 +10,7 @@ export const metadata = {
   export default function Creditos(){
     return (
       <>
-        <Titulo text='creditos'></Titulo>
+        <Titulo text='créditos'></Titulo>
         <TextoComum>
           <p>
             Felipe Silva de Oliveira <br/>
