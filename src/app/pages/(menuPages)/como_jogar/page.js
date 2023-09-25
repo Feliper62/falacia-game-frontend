@@ -1,4 +1,4 @@
-import styles from '../../styles/Titulo.module.css'
+import styles from '../../../styles/Titulo.module.css'
 import Titulo from '@/app/components/Titulo'
 
 export const metadata = {
@@ -10,13 +10,7 @@ export const metadata = {
     return (
         <>
         <Titulo text='como jogar'></Titulo>
-        <ol>
-          <li>Felipe Silva de Oliveira</li>
-          <li>Turn right</li>
-          <li>Go straight across the first two roundabouts</li>
-          <li>Turn left at the third roundabout</li>
-          <li>The school is on your right, 300 meters up the road</li>
-        </ol>
+        
         </>
           
            
