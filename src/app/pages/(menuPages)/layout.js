@@ -1,6 +1,6 @@
-import Button from "../components/Button";
-import VoltarButton from "../components/VoltarButton";
-import styles from '../styles/VoltarButton.module.css';
+import Button from "../../components/Button";
+import VoltarButton from "../../components/VoltarButton"
+import styles from '../../styles/VoltarButton.module.css';
 
 
 export default function OtherLayout({ children }) {

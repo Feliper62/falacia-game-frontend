@@ -1,6 +1,6 @@
 import React from 'react';
-import CaixaTexto from '../../components/CaixaTexto';
-import Button from '../../components/Button';
+import CaixaTexto from '../../../components/CaixaTexto';
+import Button from '../../../components/Button';
 import Titulo from '@/app/components/Titulo';
 
 
@@ -51,8 +51,9 @@ export default function CrirSala(){
    return (
    <>
      <Titulo text='Criar Sala'></Titulo>
-     <CaixaTexto placeholder="Digite seu apelido"/>
-     <Button text="Criar Sala" href="inGame/tela_grupo" id="tela_grupo" />
+    
+     <CaixaTexto text="Apelido" placeholder="Digite seu apelido"/>
+     <Button text="Criar Sala" href="grupo" id="grupo" />
    </>
    )
  }

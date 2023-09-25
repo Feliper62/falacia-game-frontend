@@ -18,9 +18,10 @@ import styles from '../styles/CaixaTexto.module.css'; // Importe os estilos do C
 
 // export default CaixaTexto;
 
-const Input = ({placeholder}) => {
+const Input = ({text, placeholder}) => {
   return (
     <div className={styles.Input}>
+      <label className={styles.label}>{text}</label>
       <input className={styles.input }type="text" placeholder= {placeholder} />
     </div>
   );

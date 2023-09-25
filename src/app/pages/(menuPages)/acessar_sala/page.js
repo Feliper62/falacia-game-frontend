@@ -1,5 +1,5 @@
 import styles from '../../styles/Titulo.module.css'
-import Button from '../../components/Button'
+import Button from '../../../components/Button'
 import Titulo from '@/app/components/Titulo'
 
 
@@ -12,8 +12,7 @@ export const metadata = {
     return (
         <>
             <Titulo text='ACESSAR SALA'></Titulo>
-           
-               
+            <Button text="Acessar Sala" href="pages/tela_grupo" id="tela_grupo" />       
 
         </>
    
