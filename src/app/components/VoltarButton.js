@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/VoltarButton.module.css'; // Importe os estilos do CSS aqui
 
 // O componente Button aceita props como text, href e id
-const VoltarButtonButton = ({ text, href, id }) => {
+const VoltarButton = ({ text, href, id }) => {
   return (
   <div className={styles.containerButton}>
         <a className={styles.voltarButton} href={href} id={id}>
@@ -12,4 +12,4 @@ const VoltarButtonButton = ({ text, href, id }) => {
   );
 };
 
-export default VoltarButtonButton;
+export default VoltarButton;

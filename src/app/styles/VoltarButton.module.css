@@ -29,4 +29,12 @@
     display: flex;
 }
 
+.voltarButton:hover {
+	background:linear-gradient(to bottom, #f23077 5%, #fa99be 100%);
+	background-color:#f23077;
+}
+.voltarButton:active {
+	position:relative;
+	top:1px;
+}
 

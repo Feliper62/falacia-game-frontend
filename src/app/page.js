@@ -24,9 +24,7 @@ export default function Home() {
         <nav>
           <Button text="Créditos" href="pages/creditos" id="creditos" />
         </nav>
-        <nav>
-          <Button text="PÁGINA TESTE" href="pages/dashboard" id="dashboard" />
-        </nav>
+        
       </div>
     </>
   )
