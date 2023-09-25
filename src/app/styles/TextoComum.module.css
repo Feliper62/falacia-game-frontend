@@ -8,6 +8,4 @@
     margin-bottom: 1px;
     text-decoration: none;
     color: white;
-    -webkit-text-stroke: 2px black; /* Aumenta a largura do contorno para 2 pixels */
-    text-stroke: 2px black; /* Aumenta a largura do contorno para 2 pixels */
 }
