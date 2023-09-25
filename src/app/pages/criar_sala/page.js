@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '../../styles/Titulo.module.css';
 import CaixaTexto from '../../components/CaixaTexto';
 import Button from '../../components/Button';
 import Titulo from '@/app/components/Titulo';
+
 
 export const metadata = {
   title: 'Criar Sala',
@@ -10,47 +10,51 @@ export const metadata = {
 }
 
 //CODIGO DO FELIPAO
-// export default function CriarSala() {
-//   const containerStyles = {
-//     display: 'flex',
-//     flexDirection: 'column',
-//     alignItems: 'center', 
-//     minHeight: 'calc(100vh - 120px)',
-//     position: 'relative', 
-//   };
+//  export default function CriarSala() {
+//    const containerStyles = {
+//      display: 'flex',
+//      flexDirection: 'column',
+//      alignItems: 'center', 
+//      minHeight: 'calc(100vh - 120px)',
+//      position: 'relative', 
+//    };
 
-//   const buttonStylesCenter = {
-//     margin: '10px', 
-//   };
+//    const buttonStylesCenter = {
+//      margin: '10px', 
+//    };
 
-//   const buttonStylesTopLeft = {
-//     display: 'flex',
-//     position: 'absolute', 
-//     top: 0, 
-//     left: 0, 
-//     margin: '10px', 
-//   };
+//    const buttonStylesTopLeft = {
+//      display: 'flex',
+//      position: 'absolute', 
+//      top: 0, 
+//      left: 0, 
+//      margin: '10px', 
+//    };
 
-//   return (
-//     <>
-//       <Titulo text='criar sala'></Titulo>
-//       <div className={styles.conteudo}>
-//         <CaixaTexto />
-//       </div>
-//       <div style={containerStyles}>
-//         <Button text="CRIAR SALA" href="pages/tela_grupo" id="criarSala" style={buttonStylesCenter} />
-//       </div>
-//       <div style={buttonStylesTopLeft}>
-//         <Button text="VOLTAR" href="pages/outra_pagina" id="voltar" />
-//       </div>
-//     </>
-//   )
-// }
+//    return (
+//      <>
+//        <Titulo text='criar sala'></Titulo>
+//        <div className={styles.conteudo}>
+//          <CaixaTexto />
+//        </div>
+//        <div style={containerStyles}>
+//          <Button text="CRIAR SALA" href="pages/tela_grupo" id="criarSala" style={buttonStylesCenter} />
+//        </div>
+//        <div style={buttonStylesTopLeft}>
+//          <Button text="VOLTAR" href="pages/outra_pagina" id="voltar" />
+//        </div>
+//      </>
+//    )
+//  }
 
 export default function CrirSala(){
-  return (
-  <>
-    <Titulo text='Criar Sala'></Titulo>
-  </>
-  )
-}
+   return (
+   <>
+     <Titulo text='Criar Sala'></Titulo>
+     <CaixaTexto placeholder="Digite seu apelido"/>
+     <Button text="Criar Sala" href="inGame/tela_grupo" id="tela_grupo" />
+   </>
+   )
+ }
+
+
