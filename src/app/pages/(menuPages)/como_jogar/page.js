@@ -9,7 +9,14 @@ export const metadata = {
   export default function ComoJogar(){
     return (
         <>
-         <Titulo text='como jogar'></Titulo>
+        <Titulo text='como jogar'></Titulo>
+        <ol>
+          <li>Felipe Silva de Oliveira</li>
+          <li>Turn right</li>
+          <li>Go straight across the first two roundabouts</li>
+          <li>Turn left at the third roundabout</li>
+          <li>The school is on your right, 300 meters up the road</li>
+        </ol>
         </>
           
            

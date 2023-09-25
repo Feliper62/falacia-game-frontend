@@ -1,5 +1,6 @@
-import styles from '../../styles/Titulo.module.css'
+import styles from '../../../styles/Titulo.module.css'
 import Titulo from '@/app/components/Titulo'
+import TextoComum from '../../../components/TextoComum'
 
 export const metadata = {
     title: 'Créditos',
@@ -8,9 +9,19 @@ export const metadata = {
 
   export default function Creditos(){
     return (
-        <>
-          <Titulo text='creditos'></Titulo>
-        </>
+      <>
+        <Titulo text='creditos'></Titulo>
+        <TextoComum>
+          <p>
+            Felipe Silva de Oliveira <br/>
+            Gabriel Pinto Sasaki <br/>
+            Matheus Pereira de Almeida <br/>
+            Monique Pereira da Silva <br/>
+            Veronica Cano Bernardino <br/>
+            Vinicius Augusto Gomes Riso <br/>
+          </p>
+        </TextoComum>
+      </>
           
            
       )

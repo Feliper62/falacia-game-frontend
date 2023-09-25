@@ -52,7 +52,7 @@ export default function CrirSala(){
    <>
      <Titulo text='Criar Sala'></Titulo>
     
-     <CaixaTexto text="Apelido" placeholder="Digite seu apelido"/>
+     <CaixaTexto text="Apelido:" placeholder="Digite seu apelido"/>
      <Button text="Criar Sala" href="grupo" id="grupo" />
    </>
    )
