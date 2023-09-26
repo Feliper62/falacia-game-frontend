@@ -1,4 +1,5 @@
-import Titulo from '@/app/components/Titulo'
+import Texto from '@/app/components/Texto'
+import styles from '../../../styles/Texto.module.css'
 
 export const metadata = {
     title: 'Como Jogar',
@@ -8,7 +9,7 @@ export const metadata = {
   export default function ComoJogar(){
     return (
         <>
-        <Titulo text='como jogar'></Titulo>
+        <Texto className={styles.titulo} text='como jogar'/>
         
         </>
           

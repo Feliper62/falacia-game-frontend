@@ -1,7 +1,6 @@
 import Button from "../../components/Button";
 import styles from '../../styles/Button.module.css';
 
-
 export default function OtherLayout({ children }) {
     return (
       <>

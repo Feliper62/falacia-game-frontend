@@ -1,13 +1,12 @@
-import Button from "@/app/components/Button"
-import Titulo from "@/app/components/Titulo"
-import CaixaTexto from '../../../components/CaixaTexto'
+import Texto from "@/app/components/Texto";
+import styles from '../../../styles/Texto.module.css'
 
 export default function Grupo(){
     return (
     <>
       <inGameLayout>
-      <Titulo text='falácia'></Titulo>
-        </inGameLayout>
+      <Texto className={styles.titulo} text='falácia'></Texto>
+      </inGameLayout>
       
     </>
     )

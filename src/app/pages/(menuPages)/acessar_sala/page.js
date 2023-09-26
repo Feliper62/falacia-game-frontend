@@ -1,7 +1,9 @@
 import Button from '../../../components/Button';
-import Titulo from '@/app/components/Titulo';
-import CaixaTexto from '../../../components/CaixaTexto'; // Importe o componente CaixaTexto
+import Texto from '@/app/components/Texto';
+import CaixaTexto from '../../../components/CaixaTexto';
 import styles from '../../../styles/Button.module.css'
+import styles2 from '../../../styles/Texto.module.css'
+
 
 export const metadata = {
   title: 'Acessar Sala',
@@ -11,7 +13,7 @@ export const metadata = {
 export default function AcessarSala() {
   return (
     <>
-      <Titulo text='ACESSAR SALA'></Titulo>
+      <Texto className={styles2.titulo} text='ACESSAR SALA'/>
 
       {/* input Código da Sala */}
       <CaixaTexto text="Código da Sala" placeholder="Digite o código da sala" />

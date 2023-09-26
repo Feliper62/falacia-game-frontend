@@ -1,9 +1,10 @@
 import React from 'react';
+
+import Texto from '@/app/components/Texto';
 import CaixaTexto from '../../../components/CaixaTexto';
 import Button from '../../../components/Button';
-import Titulo from '@/app/components/Titulo';
 import styles from '../../../styles/Button.module.css'
-
+import styles2 from '../../../styles/Texto.module.css'
 
 export const metadata = {
   title: 'Criar Sala',
@@ -51,7 +52,7 @@ export const metadata = {
 export default function CrirSala(){
    return (
    <>
-     <Titulo text='Criar Sala'></Titulo>
+     <Texto className={styles2.titulo} text='Criar Sala' />
     
      <CaixaTexto text="Apelido:" placeholder="Digite seu apelido"/>
      <Button className={styles.Button} text="Criar Sala" href="grupo" id="grupo" />

@@ -1,7 +1,7 @@
-import Titulo from "./components/Titulo"
 import Button from "./components/Button";
+import Texto from "./components/Texto";
 import styles from './styles/Button.module.css'
-
+import styles2 from './styles/Texto.module.css'
 
 export const metadata = {
   title: 'FALÁCIA',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Titulo text='falácia'></Titulo>
+      <Texto className={styles2.titulo} text='falácia'></Texto>
       <div>
         <nav>
           <Button className={styles.Button} text="Criar Sala" href="pages/criar_sala" id="criar_sala" />
@@ -24,6 +24,9 @@ export default function Home() {
         </nav>
         <nav>
           <Button className={styles.Button} text="Créditos" href="pages/creditos" id="creditos" />
+        </nav>
+        <nav>
+          <Button className={styles.Button} text="Testes" href="pages/testes" id="testes" />
         </nav>
         
       </div>
