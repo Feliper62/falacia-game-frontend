@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Button = ({ text,className, href, id }) => {
   return (
-    <a className={className} href={href} id={id}>
+    <Link className={className} href={href} id={id}>
       {text}
-    </a>
+    </Link>
   );
 };
 

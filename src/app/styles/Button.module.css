@@ -1,33 +1,29 @@
 .Button {
-    max-height: 20px;
-    margin: 40px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     display: flex;
+    max-height: 20px;
+    margin: 40px;
     padding: 20px 40px;
     width: 300px;
     color: #fff;
     text-decoration: none;
     margin-bottom: 10px;
     border-radius: 50px;
-    text-align: center;
+    font-size: 40px;
     box-shadow: 0px 6px 15px -7px #000000;
+    text-align: center;
     font-family: Kanit;
     text-transform: uppercase;
-    font-size: 40px;
     justify-content: center;
     align-items: center;
 	background:linear-gradient(to bottom, #ff75aa 25%, #f23077 100%);
-	background-color:#fa99be;
-    display: flex;
-
 }
 .Button:hover {
 	background:linear-gradient(to bottom, #f23077 5%, #fa99be 100%);
 	background-color:#f23077;
 }
 .Button:active {
-	position:relative;
 	top:1px;
 }
 
@@ -41,7 +37,6 @@
     z-index: 999; 
     max-height: 20px;
     margin: 20px;
-    display: flex;
     padding: 20px 40px;
     width: 200px;
     color: #fff;
@@ -56,7 +51,6 @@
     justify-content: center;
     align-items: center;
 	background:linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
-    display: flex;
 }
 
 .voltarButton:hover {
