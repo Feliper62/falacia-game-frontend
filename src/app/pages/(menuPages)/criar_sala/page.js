@@ -17,7 +17,7 @@ export default function CrirSala(){
      <Texto className={styles2.titulo} text='Criar Sala' />
     
      <CaixaTexto text="Apelido:" placeholder="Digite seu apelido"/>
-     <Button className={styles.Button} text="Criar Sala" href="sala_host" id="sala_host" />
+     <Button className={styles.Button} text="Criar Sala" href="host" id="host" />
    </>
    )
  }
