@@ -2,6 +2,7 @@ import React from 'react';
 import CaixaTexto from '../../../components/CaixaTexto';
 import Button from '../../../components/Button';
 import Titulo from '@/app/components/Titulo';
+import styles from '../../../styles/Button.module.css'
 
 
 export const metadata = {
@@ -53,7 +54,7 @@ export default function CrirSala(){
      <Titulo text='Criar Sala'></Titulo>
     
      <CaixaTexto text="Apelido:" placeholder="Digite seu apelido"/>
-     <Button text="Criar Sala" href="grupo" id="grupo" />
+     <Button className={styles.Button} text="Criar Sala" href="grupo" id="grupo" />
    </>
    )
  }

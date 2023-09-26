@@ -1,6 +1,6 @@
 body {
     /* Define o gradiente linear */
-    background: linear-gradient(to bottom,#00AAE0, #F23078);
+    background: linear-gradient(to bottom,#00AAE0, #F23078); 
     /* Isso garante que o gradiente ocupe toda a altura da página */
     min-height: 100vh;
     /* Isso remove a margem padrão do corpo */

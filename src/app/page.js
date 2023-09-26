@@ -1,5 +1,6 @@
 import Titulo from "./components/Titulo"
 import Button from "./components/Button";
+import styles from './styles/Button.module.css'
 
 
 export const metadata = {
@@ -13,16 +14,16 @@ export default function Home() {
       <Titulo text='falácia'></Titulo>
       <div>
         <nav>
-          <Button text="Criar Sala" href="pages/criar_sala" id="criar_sala" />
+          <Button className={styles.Button} text="Criar Sala" href="pages/criar_sala" id="criar_sala" />
         </nav>
         <nav>
-          <Button text="Acessar Sala" href="pages/acessar_sala" id="acessar_sala" />
+          <Button className={styles.Button} text="Acessar Sala" href="pages/acessar_sala" id="acessar_sala" />
         </nav>
         <nav>
-          <Button text="Como Jogar" href="pages/como_jogar" id="como_jogar" />
+          <Button className={styles.Button} text="Como Jogar" href="pages/como_jogar" id="como_jogar" />
         </nav>
         <nav>
-          <Button text="Créditos" href="pages/creditos" id="creditos" />
+          <Button className={styles.Button} text="Créditos" href="pages/creditos" id="creditos" />
         </nav>
         
       </div>

@@ -1,6 +1,7 @@
 import Button from '../../../components/Button';
 import Titulo from '@/app/components/Titulo';
 import CaixaTexto from '../../../components/CaixaTexto'; // Importe o componente CaixaTexto
+import styles from '../../../styles/Button.module.css'
 
 export const metadata = {
   title: 'Acessar Sala',
@@ -18,7 +19,7 @@ export default function AcessarSala() {
       {/* Input Apelido */}
       <CaixaTexto text="Apelido" placeholder="Digite seu apelido" />
 
-      <Button text="Acessar Sala" href="pages/tela_grupo" id="tela_grupo" />
+      <Button className={styles.Button} text="Acessar Sala" href="pages/tela_grupo" id="tela_grupo" />
     </>
   );
 }

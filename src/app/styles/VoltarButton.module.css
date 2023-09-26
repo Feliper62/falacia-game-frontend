@@ -8,6 +8,13 @@
     z-index: 999; /* Opcional: ajuste o índice Z se necessário */
 }
 .voltarButton{
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: flex-start; /* Alinha ao topo */
+    position: absolute;
+    top: 10px; /* Ajuste a posição vertical conforme necessário */
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+    z-index: 999; /* Opcional: ajuste o índice Z se necessário */
     max-height: 20px;
     margin: 20px;
     display: flex;
@@ -34,7 +41,6 @@
 	background-color:#f23077;
 }
 .voltarButton:active {
-	position:relative;
 	top:1px;
 }
 

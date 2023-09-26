@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <link href='https://fonts.googleapis.com/css?family=Karantina' rel='stylesheet'></link>
       <html lang="pt-br"/>
       
-       
+          
           {children}
        
         
