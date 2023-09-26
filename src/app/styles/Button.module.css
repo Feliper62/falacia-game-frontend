@@ -1,23 +1,4 @@
- /* .Button {
-  max-height: 20px;
-    margin: 10px;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    display: flex;
-    padding: 10px 20px;
-    background-color: #F23078;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 1px 1px 5px #000;
-    font-family: Kanit;
-    font-size: 16px;
-    justify-content: center;
-    align-items: center;
-    
-}*/.Button {
+.Button {
     max-height: 20px;
     margin: 40px;
     flex-wrap: nowrap;
@@ -52,12 +33,12 @@
 
 .voltarButton{
     display: flex;
-    justify-content: flex-start; /* Alinha à esquerda */
-    align-items: flex-start; /* Alinha ao topo */
+    justify-content: flex-start;
+    align-items: flex-start; 
     position: absolute;
-    top: 10px; /* Ajuste a posição vertical conforme necessário */
-    left: 10px; /* Ajuste a posição horizontal conforme necessário */
-    z-index: 999; /* Opcional: ajuste o índice Z se necessário */
+    top: 10px; 
+    left: 10px; 
+    z-index: 999; 
     max-height: 20px;
     margin: 20px;
     display: flex;
@@ -75,7 +56,6 @@
     justify-content: center;
     align-items: center;
 	background:linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
-	/* background-color:#fa99be; */
     display: flex;
 }
 
