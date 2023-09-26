@@ -74,13 +74,13 @@
     font-size: 40px;
     justify-content: center;
     align-items: center;
-	background:linear-gradient(to bottom, #ff75aa 25%, #f23077 100%);
-	background-color:#fa99be;
+	background:linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
+	/* background-color:#fa99be; */
     display: flex;
 }
 
 .voltarButton:hover {
-	background:linear-gradient(to bottom, #f23077 5%, #fa99be 100%);
+	background:linear-gradient(to bottom, #553CA1 5%, #6c4ccc 100%);
 	background-color:#f23077;
 }
 .voltarButton:active {
