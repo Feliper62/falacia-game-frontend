@@ -1,6 +1,5 @@
 import Button from "@/app/components/Button"
 import Titulo from "@/app/components/Titulo"
-import CaixaTexto from '../../../components/CaixaTexto'
 
 export default function Grupo(){
     return (

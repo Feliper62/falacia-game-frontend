@@ -5,7 +5,7 @@
     right: 0;
     display: flex;
     padding-bottom: 4px;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    align-items: center;
         
 }
