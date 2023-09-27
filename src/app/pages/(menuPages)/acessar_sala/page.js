@@ -21,7 +21,7 @@ export default function AcessarSala() {
       {/* Input Apelido */}
       <CaixaTexto text="Apelido" placeholder="Digite seu apelido" />
 
-      <Button className={styles.Button} text="Acessar Sala" href="host" id="tela_grupo" />
+      <Button className={styles.Button} text="Acessar Sala" href="grupo" id="tela_grupo" />
     </>
   );
 }
