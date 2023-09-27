@@ -11,12 +11,12 @@ export default function RootLayout({ children }) {
       <link href='https://fonts.googleapis.com/css?family=Karantina' rel='stylesheet'></link>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <html lang="pt-br"/>
-      
       {children}
+      
         
-       <Texto className={styles.footer} text="
+       <footer><Texto className={styles.footer} text="
                LoboGuará Games &copy; 2023"/>
-          
+           </footer>
           
     </>
       
