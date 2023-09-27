@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Texto className={styles2.titulo} text='falácia'></Texto>
-      <div>
+      <div className={styles.container}>
         <nav>
           <Button className={styles.Button} text="Criar Sala" href="pages/criar_sala" id="criar_sala" />
         </nav>
@@ -25,9 +25,9 @@ export default function Home() {
         <nav>
           <Button className={styles.Button} text="Créditos" href="pages/creditos" id="creditos" />
         </nav>
-        <nav>
+        {/* <nav>
           <Button className={styles.Button} text="Testes" href="pages/testes" id="testes" />
-        </nav>
+        </nav> */}
         
       </div>
     </>

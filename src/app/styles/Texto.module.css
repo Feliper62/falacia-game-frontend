@@ -23,6 +23,7 @@
 }
 
 .titulo {
+    display: flex;
     text-align: center;
     margin-bottom: 100px;
     font-family: Karantina;

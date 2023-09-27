@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '../styles/CaixaTexto.module.css'; // Importe os estilos do CSS aqui
+import styles from '../styles/InputTexto.module.css'; // Importe os estilos do CSS aqui
 import styles2 from '../styles/Texto.module.css'
 
-const Input = ({text, placeholder}) => {
+const InputTexto = ({text, placeholder}) => {
   return (
     <div className={styles.Input}>
       <label className={styles2.textoComum}>{text}</label>
@@ -11,4 +11,4 @@ const Input = ({text, placeholder}) => {
   );
 };
 
-export default Input;
+export default InputTexto;
