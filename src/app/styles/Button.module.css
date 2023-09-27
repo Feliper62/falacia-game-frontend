@@ -1,69 +1,55 @@
-.Button {
-    max-height: 20px;
-    margin: 40px;
-    flex-wrap: nowrap;
-    flex-direction: column;
+/* Estilos base para ambos os botões */
+.Button, .voltarButton {
     display: flex;
-    padding: 20px 40px;
-    width: 300px;
+    flex-direction: column; /* Empilhe os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 2vw; /* Ajuste o espaçamento vertical e horizontal conforme necessário */
     color: #fff;
     text-decoration: none;
-    margin-bottom: 10px;
     border-radius: 50px;
     text-align: center;
     box-shadow: 0px 6px 15px -7px #000000;
     font-family: Kanit;
     text-transform: uppercase;
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-	background:linear-gradient(to bottom, #ff75aa 25%, #f23077 100%);
-	background-color:#fa99be;
-    display: flex;
-
-}
-.Button:hover {
-	background:linear-gradient(to bottom, #f23077 5%, #fa99be 100%);
-	background-color:#f23077;
-}
-.Button:active {
-	position:relative;
-	top:1px;
-}
-
-.voltarButton{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; 
+    font-size: 1.5vw; /* Use unidades 'vw' para tamanho de fonte relativo à largura da tela */
+    width: auto; /* Largura automática para se ajustar ao conteúdo */
+    height: 3vh; /* Ajuste a altura conforme necessário */
+    margin: 3vh 0; /* Aumente o espaçamento vertical entre os botões ainda mais */
+  }
+  
+  /* Estilos específicos para .Button */
+  .Button {
+    background: linear-gradient(to bottom, #ff75aa 25%, #f23077 100%);
+    background-color: #fa99be;
+  }
+  
+  .Button:hover {
+    background: linear-gradient(to bottom, #f23077 5%, #fa99be 100%);
+    background-color: #f23077;
+  }
+  
+  /* Estilos específicos para .voltarButton */
+  .voltarButton {
     position: absolute;
-    top: 10px; 
-    left: 10px; 
-    z-index: 999; 
-    max-height: 20px;
-    margin: 20px;
-    display: flex;
-    padding: 20px 40px;
-    width: 200px;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 0px 6px 15px -7px #000000;
-    font-family: Kanit;
-    text-transform: uppercase;
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-	background:linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
-    display: flex;
-}
-
-.voltarButton:hover {
-	background:linear-gradient(to bottom, #553CA1 5%, #6c4ccc 100%);
-	background-color:#f23077;
-}
-.voltarButton:active {
-	top:1px;
-}
-
+    top: 2vh; /* Use unidades 'vh' para posicionamento relativo à altura da tela */
+    left: 2vw; /* Use unidades 'vw' para posicionamento relativo à largura da tela */
+    z-index: 999;
+    background: linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
+  }
+  
+  .voltarButton:hover {
+    background: linear-gradient(to bottom, #553CA1 5%, #6c4ccc 100%);
+    background-color: #f23077;
+  }
+  
+  /* Media query para ajustar o espaçamento em telas menores */
+  @media (max-width: 768px) {
+    .Button, .voltarButton {
+      padding: 0.5vh 1vw; /* Reduza o espaçamento vertical e horizontal para telas menores, se necessário */
+      font-size: 1rem; /* Reduza o tamanho da fonte para telas menores, se necessário */
+      height: 3vh; /* Ajuste a altura conforme necessário para telas menores */
+      margin: 4vh 0; /* Aumente o espaçamento vertical entre os botões para telas menores ainda mais */
+    }
+  }
+  
