@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/CaixaTexto.module.css'; // Importe os estilos do CSS aqui
+import styles from '../styles/InputTexto.module.css'; // Importe os estilos do CSS aqui
 import styles2 from '../styles/Texto.module.css'
 // const CaixaTexto = ({ label, placeholder }) => {
 //   return (
