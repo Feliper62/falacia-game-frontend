@@ -18,7 +18,7 @@ import styles2 from '../styles/Texto.module.css'
 
 // export default CaixaTexto;
 
-const Input = ({text, placeholder}) => {
+const InputTexto = ({text, placeholder}) => {
   return (
     <div className={styles.Input}>
       <label className={styles2.textoComum}>{text}</label>
@@ -27,4 +27,4 @@ const Input = ({text, placeholder}) => {
   );
 };
 
-export default Input;
+export default InputTexto;

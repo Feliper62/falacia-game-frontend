@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Texto from '@/app/components/Texto';
-import CaixaTexto from '../../../components/CaixaTexto';
+import CaixaTexto from '../../../components/InputTexto';
 import Button from '../../../components/Button';
 import styles from '../../../styles/Button.module.css'
 import styles2 from '../../../styles/Texto.module.css'

@@ -1,6 +1,6 @@
 import Button from '../../../components/Button';
 import Texto from '@/app/components/Texto';
-import CaixaTexto from '../../../components/CaixaTexto';
+import CaixaTexto from '../../../components/InputTexto';
 import styles from '../../../styles/Button.module.css'
 import styles2 from '../../../styles/Texto.module.css'
 
