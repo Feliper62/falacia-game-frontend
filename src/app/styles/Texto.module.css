@@ -1,4 +1,3 @@
-/* Estilos para a classe .textoComum */
 .textoComum {
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@
     color: white;
   }
   
-  /* Estilos para a classe .footer */
   .footer {
     position: absolute;
     bottom: 1rem; /* Posicionamento em relação ao fundo da tela */
@@ -23,7 +21,6 @@
     align-items: center; /* Centraliza verticalmente */
   }
   
-  /* Estilos para a classe .titulo */
   .titulo {
     display: flex;
     text-align: center;
@@ -37,7 +34,6 @@
     padding: 1rem; /* Espaçamento interno menor */
   }
   
-  /* Media query para ajustar estilos em telas menores */
   @media (max-width: 768px) {
     .textoComum {
       font-size: 1rem; /* Tamanho de fonte menor para telas menores */
@@ -46,6 +42,7 @@
     .footer {
       bottom: 0.5rem; /* Posicionamento inferior menor */
       padding-bottom: 0.2rem; /* Espaçamento inferior ainda menor */
+      font-size: 0.7rem; /* Tamanho de fonte menor para telas menores */
     }
   
     .titulo {

@@ -1,28 +1,41 @@
-.inputGeral{
+.inputGeral {
   text-align: center;
-  
 }
 
 .textoInput {
-  font-size: 50px;
-  margin-bottom: 16px;
+  font-size: 2vw; /* Tamanho de fonte relativo à largura da tela */
+  margin-bottom: 0.5rem; /* Espaçamento inferior menor */
   font-family: Karantina;
   text-shadow: -2px 2px #000000;
 }
 
-
 .input[type="text"] {
-  padding: 5px;
-   font-size: 30px;
-   border-width: 1px;
-   border-color: #CCCCCC;
-   background-color: #FFFFFF;
-   color: #000000;
-   border-style: solid;
-   border-radius: 15px;
-   box-shadow: -1px -2px 0px rgba(66,66,66,.66);
-   text-shadow: -50px 0px 0px rgba(66,66,66,.0);
-   text-align: center;
-   font-family: Kanit;
-   margin-bottom: 20px;
+  padding: 0.5rem;
+  font-size: 1.5vw; /* Tamanho de fonte relativo à largura da tela */
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: -1px -2px 0px rgba(66, 66, 66, 0.66);
+  text-shadow: -10px 0px 0px rgba(66, 66, 66, 0);
+  text-align: center;
+  font-family: Kanit;
+  margin-bottom: 1rem; /* Espaçamento inferior maior */
+}
+
+/* Media query para ajustar estilos em telas menores */
+@media (max-width: 768px) {
+ 
+  .textoInput {
+    font-size: 1rem; 
+    margin-bottom: 0.2rem; 
+  }
+
+  .input[type="text"] {
+    padding: 0.2rem;
+    font-size: 1rem; 
+    margin-bottom: 0.5rem;
+  }
 }
