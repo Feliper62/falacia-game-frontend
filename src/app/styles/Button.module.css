@@ -22,11 +22,14 @@
   .Button {
     background: linear-gradient(to bottom, #ff75aa 25%, #f23077 100%);
     background-color: #fa99be;
+    transition: all 600ms;
   }
   
   .Button:hover {
     background: linear-gradient(to bottom, #f23077 5%, #fa99be 100%);
     background-color: #f23077;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   /* Estilos específicos para .voltarButton */
@@ -36,11 +39,14 @@
     left: 2vw; /* Use unidades 'vw' para posicionamento relativo à largura da tela */
     z-index: 999;
     background: linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
+    transition: all 600ms;
   }
   
   .voltarButton:hover {
     background: linear-gradient(to bottom, #553CA1 5%, #6c4ccc 100%);
     background-color: #f23077;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   /* Media query para ajustar o espaçamento em telas menores */
