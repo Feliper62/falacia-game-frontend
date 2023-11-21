@@ -1,13 +1,14 @@
 import Texto from "@/app/components/Texto";
 import styles from '../../../styles/Texto.module.css'
+import stylesText from '../../../styles/CaixaDeTexto.module.css'
+import CaixaDeTexto from "@/app/components/CaixaDeTexto";
 
 export default function GrupoConvidado(){
     return (
     <>
-      <inGameLayout>
       <Texto className={styles.titulo} text='falácia'></Texto>
-      <Texto className={styles.textoComum} text='<p>Você é o Convidado</p>'></Texto>
-      </inGameLayout>
+      <CaixaDeTexto className={stylesText.caixaDeTextoEsquerda} text='Aguardando Jogadores...'/>
+      <CaixaDeTexto className={stylesText.caixaDeTextoEsquerda} text='Aguardando Inicio da Partida pelo Host...'/>
       
     </>
     )

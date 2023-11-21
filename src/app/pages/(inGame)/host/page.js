@@ -1,5 +1,9 @@
 import Texto from '@/app/components/Texto'
 import styles from '../../../styles/Texto.module.css'
+import Button from "../../../components/Button"
+import buttonStyle from '../../../styles/Button.module.css'
+import stylesText from '../../../styles/CaixaDeTexto.module.css'
+import CaixaDeTexto from '@/app/components/CaixaDeTexto'
 
 export const metadata = {
     title: 'Sala de Grupo',
@@ -9,10 +13,9 @@ export const metadata = {
   export default function GrupoHost(){
     return (
     <>
-      <inGameLayout>
       <Texto className={styles.titulo} text='falácia'></Texto>
-      <Texto className={styles.textoComum} text='<p>Você é o Host</p>'></Texto>
-      </inGameLayout>
+      <Button className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" />
+      
       
     </>
     )
