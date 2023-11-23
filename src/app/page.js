@@ -24,7 +24,10 @@ export default function Home() {
         </nav>
         <nav>
           <Button className={styles.Button} text="Créditos" href="pages/creditos" id="creditos" />
-        </nav>       
+        </nav>   
+        <nav>
+          <Button className={styles.Button} text="Teste do Back-End" href="pages/teste" id="teste" />
+        </nav>    
       </div>
     </>
   )
