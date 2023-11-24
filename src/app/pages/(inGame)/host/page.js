@@ -20,6 +20,3 @@ export const metadata = {
     </>
     )
   }
-  GrupoHost.getLayout = function getLayout(page) {
-    return <inGameLayout>{page}</inGameLayout>; // Substitua 'RootLayout' pelo seu layout personalizado, se necessário
-  };
