@@ -1,9 +1,5 @@
-/*import Texto from "@/app/components/Texto"
-import Button from "@/app/components/Button"
-import stylesTitulo from '../../../styles/Texto.module.css'
-import stylesButton from  '../../../styles/Button.module.css'
 
-export default function TesteBack(){
+/*export default function TesteBack(){
     return (
     <>
       <Texto className={stylesTitulo.titulo} text='TESTE BACK-END' />
@@ -11,14 +7,26 @@ export default function TesteBack(){
     </>
     )
   }*/
-"use client";
+
+import api_client from '../../../api/route'
+
 import Texto from "@/app/components/Texto";
 import stylesTitulo from "../../../styles/Texto.module.css";
 
-export default function TesteBack() {
+export default async function TesteBack() {
+  const usuarios = await api_client.get('http://127.0.0.1:8000/usuarios/');
+  console.log(usuarios)
   return (
     <>
       <Texto className={stylesTitulo.titulo} text="TESTE BACK-END" />
+      <p>{usuarios.map((usuario) => 
+      <li key={usuario.id}>
+        {usuario.apelido}
+      </li>
+        
+        
+        )}</p>
+      
     </>
   );
 }
