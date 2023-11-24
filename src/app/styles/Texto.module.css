@@ -25,13 +25,15 @@
     display: flex;
     text-align: center;
     font-family: Karantina;
-    font-size: 8vw; /* Tamanho de fonte relativo à largura da tela */
+    font-size: 14rem; /* Tamanho de fonte relativo à largura da tela */
+    letter-spacing: -0.313rem;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: 5px 5px 0 #000;
+    text-shadow: -0.5rem 0.5rem 0.25rem rgba(0,0,0,0.50);
+    -webkit-text-stroke: 4px #000;
     max-width: 1200px;
     margin: 1rem; /* Espaçamento menor em todas as direções */
-    padding: 1rem; /* Espaçamento interno menor */
+    padding: 0.2rem; /* Espaçamento interno menor */
   }
   
   @media (max-width: 768px) {
