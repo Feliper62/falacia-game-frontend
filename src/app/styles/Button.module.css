@@ -1,57 +1,112 @@
-.Button, .voltarButton {
+.Button, .buttonIniciarPartida {
     display: flex;
-    flex-direction: column; /* Empilhe os elementos verticalmente */
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 1vh 2vw; /* Ajuste o espaçamento vertical e horizontal conforme necessário */
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
-    text-align: center;
     box-shadow: 0px 6px 15px -7px #000000;
     font-family: Kanit;
     text-transform: uppercase;
-    font-size: 1.5vw; /* Use unidades 'vw' para tamanho de fonte relativo à largura da tela */
+    font-size: 1.5rem; /* Use unidades 'vw' para tamanho de fonte relativo à largura da tela */
     width: auto; /* Largura automática para se ajustar ao conteúdo */
-    height: 3vh; /* Ajuste a altura conforme necessário */
-    margin: 3vh 0; /* Aumente o espaçamento vertical entre os botões ainda mais */
+    height: 2rem; /* Ajuste a altura conforme necessário */
+    margin: 1.729rem 0; /* Aumente o espaçamento vertical entre os botões ainda mais */
+    z-index: 999;
+    transition: all 600ms;
+    position: relative;
   }
-  
-  .Button {
+
+  .ajudaButton, .voltarButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    box-shadow: 0px 6px 15px -7px #000000;
+    position: absolute;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: Kanit;
+    text-transform: uppercase;
+    margin: 1.729rem 0;
+    width: 140px;
+    height: 2rem;
+  }
+
+  .Button, .buttonIniciarPartida {
     background: linear-gradient(to bottom, #ff75aa 25%, #f23077 100%);
     background-color: #fa99be;
-    transition: all 600ms;
+
   }
   
+  .voltarButton {
+    top: 2vh; /* Use unidades 'vh' para posicionamento relativo à altura da tela */
+    left: 2vw; /* Use unidades 'vw' para posicionamento relativo à largura da tela */
+    background: linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
+  }
+
+  .ajudaButton{
+    top: 9vh; /* Use unidades 'vh' para posicionamento relativo à altura da tela */
+    left: 2vw; /* Use unidades 'vw' para posicionamento relativo à largura da tela */
+    background: linear-gradient(to bottom, #FE9A6F 25%, #FF4D00 100%);
+    margin-top: 2rem;
+  }
+
+  /* Hover */
   .Button:hover {
     background: linear-gradient(to bottom, #f23077 5%, #fa99be 100%);
     background-color: #f23077;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
-  .voltarButton {
-    position: absolute;
-    top: 2vh; /* Use unidades 'vh' para posicionamento relativo à altura da tela */
-    left: 2vw; /* Use unidades 'vw' para posicionamento relativo à largura da tela */
-    z-index: 999;
-    background: linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
-    transition: all 600ms;
-  }
-  
+
   .voltarButton:hover {
     background: linear-gradient(to bottom, #553CA1 5%, #6c4ccc 100%);
     background-color: #f23077;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
-  @media (max-width: 768px) {
-    .Button, .voltarButton {
-      padding: 0.5vh 1vw; /* Reduza o espaçamento vertical e horizontal para telas menores, se necessário */
-      font-size: 1rem; /* Reduza o tamanho da fonte para telas menores, se necessário */
-      height: 3vh; /* Ajuste a altura conforme necessário para telas menores */
-      margin: 4vh 0; /* Aumente o espaçamento vertical entre os botões para telas menores ainda mais */
-    }
+
+  .ajudaButton:hover {
+    background: linear-gradient(to bottom, #FF4D00 5%, #FE9A6F 100%);
+    background-color: #f23077;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
+/* icons */
+
+  .icon{
+    position: absolute;
+    left: 0.3vw;
+    transform: translateY(-50%);
+    margin-left: 7px;
+    font-size: 32px;
+  }
+  
+  /* medias */
+  @media (max-width: 768px) {
+    .Button, .buttonIniciarPartida {
+      height: 2.5rem;
+    }
+
+    .voltarButton {
+      top: 1vh; /* Use unidades 'vh' para posicionamento relativo à altura da tela */
+      left: 2vw; /* Use unidades 'vw' para posicionamento relativo à largura da tela */
+      margin: 0;
+    }
+  
+    .ajudaButton {
+      top: 1vh; /* Use unidades 'vh' para posicionamento relativo à altura da tela */
+     left: 20vh; /* Use unidades 'vw' para posicionamento relativo à largura da tela */
+      margin: 0;
+    }
+
+    .buttonIniciarPartida{
+      margin: 0.8rem;
+    }
+    
+  }

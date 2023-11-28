@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     font-family: Kanit, sans-serif;
-    font-size: 2vw; /* Tamanho de fonte relativo à largura da tela */
+    font-size: 2rem; /* Tamanho de fonte relativo à largura da tela */
     margin-bottom: 1px;
     text-decoration: none;
     color: white;
@@ -21,36 +21,43 @@
     align-items: center; /* Centraliza verticalmente */
   }
   
-  .titulo {
+  .titulo, .tituloResponsivo {
     display: flex;
     text-align: center;
     font-family: Karantina;
-    font-size: 14rem; /* Tamanho de fonte relativo à largura da tela */
-    letter-spacing: -0.313rem;
+    font-size: 12rem; /* Tamanho de fonte relativo à largura da tela */
+    letter-spacing: -0.330rem;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: -0.5rem 0.5rem 0.25rem rgba(0,0,0,0.50);
-    -webkit-text-stroke: 4px #000;
+    text-shadow: -0.5rem 0.5rem 0.25rem rgba(0,0,0,0.60);
+    -webkit-text-stroke: 3px #000;
     max-width: 1200px;
     margin: 1rem; /* Espaçamento menor em todas as direções */
     padding: 0.2rem; /* Espaçamento interno menor */
   }
   
-  @media (max-width: 768px) {
-    .textoComum {
-      font-size: 1rem; /* Tamanho de fonte menor para telas menores */
-    }
-  
+  @media (max-width: 770px) {
     .footer {
       bottom: 0.5rem; /* Posicionamento inferior menor */
       padding-bottom: 0.2rem; /* Espaçamento inferior ainda menor */
       font-size: 0.7rem; /* Tamanho de fonte menor para telas menores */
     }
   
+    .tituloResponsivo {
+      font-size: 8.7rem; /* Tamanho de fonte menor para telas menores */
+    }
+
     .titulo {
-      font-size: 3rem; /* Tamanho de fonte menor para telas menores */
-      margin: 0.5rem; /* Espaçamento menor em todas as direções */
-      padding: 0.5rem; /* Espaçamento interno menor */
+      margin-top: 6rem;
     }
   }
-  
+
+
+  @media (max-width: 1024px) {
+
+    .tituloResponsivo {
+      margin-top: 8.8rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }

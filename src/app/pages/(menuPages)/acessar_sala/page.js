@@ -13,7 +13,7 @@ export const metadata = {
 export default function AcessarSala() {
   return (
     <>
-      <Texto className={styles2.titulo} text='ACESSAR SALA'/>
+      <Texto className={styles2.tituloResponsivo} text='ACESSAR SALA'/>
 
       {/* input Código da Sala */}
       <CaixaTexto text="Código da Sala" placeholder="Digite o código da sala" />
