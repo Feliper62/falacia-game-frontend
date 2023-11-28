@@ -7,7 +7,7 @@
     </>
     )
   }*/
-
+ 'use client' 
 import api_client from '../../../../api/route'
 
 import Texto from "@/app/components/Texto";
@@ -30,20 +30,6 @@ export default async function TesteJogadores() {
     }
   });
   return (
-    /*<>
-      <Texto className={stylesTitulo.titulo} text="TESTE BACK-END" />
-      {usuarios.map((usuario) => 
-
-      
-      <CaixaDeTexto className={stylesCaixa.caixaDeTextoDireita} 
-      key={usuario.id}>
-        {usuario.apelido}
-      </CaixaDeTexto>
-        
-        
-        )}
-      
-    </>*/
     <>
     <Button className={voltarStyle.voltarButton} text='Voltar' href='menuTeste'/>
     <Texto className={stylesTitulo.titulo} text="TESTE BACK-END" />
