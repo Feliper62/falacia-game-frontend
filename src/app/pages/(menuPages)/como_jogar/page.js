@@ -9,7 +9,7 @@ export const metadata = {
   export default function ComoJogar(){
     return (
         <>
-        <Texto className={styles.titulo} text='como jogar'/>
+        <Texto className={styles.tituloResponsivo} text='como jogar'/>
         
         </>
           
