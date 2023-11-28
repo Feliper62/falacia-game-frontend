@@ -9,7 +9,7 @@ import buttonStyle from '../../../styles/Button.module.css'
 export default function GrupoConvidado(){
     return (
     <>
-      <Button className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" />
+      <Button className={buttonStyle.voltarButton}  text="Voltar" href="acessar_sala" id="voltar" />
       <Texto className={styles.titulo} text='falácia'></Texto>
       <div className={stylesText.container}>
       <div> 

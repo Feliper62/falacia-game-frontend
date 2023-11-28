@@ -14,7 +14,7 @@ export default function GrupoHost(){
     return (
     <>
       <Texto className={styles.titulo} text='falácia'></Texto>
-      <Button className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" />
+      <Button className={buttonStyle.voltarButton}  text="Voltar" href="criar_sala" id="voltar" />
       
       
     </>
