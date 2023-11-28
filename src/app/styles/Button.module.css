@@ -34,6 +34,7 @@
     margin: 1.729rem 0;
     width: 140px;
     height: 2rem;
+    transition: all 600ms;
   }
 
   .Button, .buttonIniciarPartida {
@@ -46,6 +47,7 @@
     top: 2vh; /* Use unidades 'vh' para posicionamento relativo à altura da tela */
     left: 2vw; /* Use unidades 'vw' para posicionamento relativo à largura da tela */
     background: linear-gradient(to bottom, #6c4ccc 25%, #553CA1 100%);
+    transition: all 600ms;
   }
 
   .ajudaButton{
