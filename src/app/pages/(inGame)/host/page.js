@@ -4,6 +4,10 @@ import Button from "../../../components/Button"
 import buttonStyle from '../../../styles/Button.module.css'
 import stylesText from '../../../styles/CaixaDeTexto.module.css'
 import CaixaDeTexto from '@/app/components/CaixaDeTexto'
+import IconButton from '../../../components/IconButton'
+import QrCode from '../../../components/QrCode'
+import { FiHelpCircle } from "react-icons/fi";
+import { IoCaretBack } from "react-icons/io5";
 
 export const metadata = {
     title: 'Sala de Grupo',
@@ -14,9 +18,24 @@ export default function GrupoHost(){
     return (
     <>
       <Texto className={styles.titulo} text='falácia'></Texto>
-      <Button className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" />
-      
-      
+      <IconButton className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" icon={<IoCaretBack className={buttonStyle.icon} />} />
+      <IconButton className={buttonStyle.ajudaButton}  text="Ajuda" href="/" id="ajuda" icon={<FiHelpCircle className={buttonStyle.icon} />} />
+      <div className={stylesText.container}>
+      <div> 
+      <QrCode className={stylesText.QrCode} titulo = "QR CODE"  url="" text="Aponte a Câmera do celular aqui"/>
+      </div>
+      <div>
+      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Jogador 1'/>
+      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
+      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
+      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
+      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
+      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
+      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
+      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
+      </div>
+      </div>
+      <Button className={buttonStyle.buttonIniciarPartida} text="Iniciar Jogo" href="" id="" />
     </>
     )
   }

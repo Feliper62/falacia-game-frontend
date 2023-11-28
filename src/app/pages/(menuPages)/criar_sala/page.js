@@ -14,7 +14,7 @@ export const metadata = {
 export default function CrirSala(){
    return (
    <>
-     <Texto className={styles2.titulo} text='Criar Sala' />
+     <Texto className={styles2.tituloResponsivo} text='Criar Sala' />
     
      <CaixaTexto text="Apelido:" placeholder="Digite seu apelido"/>
      <Button className={styles.Button} text="Criar Sala" href="host" id="host" />
