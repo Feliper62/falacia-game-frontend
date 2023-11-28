@@ -6,6 +6,7 @@ import stylesText from '../../../styles/CaixaDeTexto.module.css'
 import CaixaDeTexto from '@/app/components/CaixaDeTexto'
 import IconButton from '../../../components/IconButton'
 import QrCode from '../../../components/QrCode'
+import stylesQR from '@/app/styles/QRCode.module.css'
 import { FiHelpCircle } from "react-icons/fi";
 import { IoCaretBack } from "react-icons/io5";
 
@@ -21,7 +22,7 @@ export default function GrupoHost(){
       <IconButton className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" icon={<IoCaretBack className={buttonStyle.icon} />} />
       <IconButton className={buttonStyle.ajudaButton}  text="Ajuda" href="/" id="ajuda" icon={<FiHelpCircle className={buttonStyle.icon} />} />
       <div className={stylesText.container}>
-      <div> 
+      <div>
       <QrCode className={stylesText.QrCode} titulo = "QR CODE"  url="" text="Aponte a Câmera do celular aqui"/>
       </div>
       <div>
