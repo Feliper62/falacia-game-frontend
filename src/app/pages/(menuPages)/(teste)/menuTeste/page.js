@@ -9,9 +9,8 @@ export default function menuTesteBackEnd(){
     <>
       <Texto className={styles.titulo} text='escolha sua pagina'></Texto>
       <Button className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" />
-      <Button className={buttonStyle.Button} text='Lista de Jogadores' href='menuTeste/listaJogadores' id='testeJogadores'/>
       <Button className={buttonStyle.Button} text='Teste de Input' href='menuTeste/inputTeste' id='inputTeste'/>
-      
+      <Button className={buttonStyle.Button} text='Lista de Jogadores' href='menuTeste/listaJogadores' id='testeJogadores'/>
     </>
     )
   };

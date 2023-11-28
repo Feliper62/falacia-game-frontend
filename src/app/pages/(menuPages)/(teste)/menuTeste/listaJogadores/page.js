@@ -18,13 +18,13 @@ import stylesText from '@/app/styles/CaixaDeTexto.module.css'
 
 
 export default async function TesteJogadores() {
-  const usuarios = await api_client.get('https://falacia-game-backend-production.up.railway.app/usuarios');
+  const usuarios = await api_client.get('https://falacia-game-backend-production.up.railway.app/usuarios/');
   console.log(usuarios)
   const totalUsuarios = 8;
   // Criando um array de 8 espaços vazios
   const jogadoresPreenchidos = new Array(totalUsuarios).fill('Espaço Vazio');
   // Preenchendo o array de jogadores com os usuários existentes
-  usuarios.reverse().forEach((usuario, index) => {
+  usuarios.forEach((usuario, index) => {
     if (index < totalUsuarios) {
       jogadoresPreenchidos[index] = usuario.apelido || 'Espaço Vazio';
     }
