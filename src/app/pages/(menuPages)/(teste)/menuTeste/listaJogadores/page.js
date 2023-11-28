@@ -8,8 +8,8 @@
     )
   }*/
 
-'use client'
-import api_client from '@/app/api/route'
+//  'use client'
+import {api_sessoes} from '@/app/api/route'
 
 import Texto from "@/app/components/Texto";
 import stylesTitulo from "@/app/styles/Texto.module.css";
@@ -20,7 +20,7 @@ import stylesText from '@/app/styles/CaixaDeTexto.module.css'
 
 
 export default async function TesteJogadores() {
-  const usuarios = await api_client.get('https://falacia-game-backend-production.up.railway.app/usuarios', {cache:'no-store'});
+  const usuarios = await api_sessoes.retorna_usuarios('8BXCF4');
   console.log(usuarios)
   const totalUsuarios = 8;
   // Criando um array de 8 espaços vazios
