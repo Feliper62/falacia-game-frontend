@@ -10,8 +10,6 @@ import { IoCaretBack } from "react-icons/io5";
 export default function GrupoConvidado(){
     return (
     <>
-<<<<<<< HEAD
-=======
       <Button className={buttonStyle.voltarButton}  text="Voltar" href="acessar_sala" id="voltar" />
 >>>>>>> d09fdb970f2e10465a89b805007b52f9544ed7ed
       <Texto className={styles.titulo} text='falácia'></Texto>

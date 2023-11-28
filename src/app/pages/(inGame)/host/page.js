@@ -18,26 +18,6 @@ export default function GrupoHost(){
     return (
     <>
       <Texto className={styles.titulo} text='falácia'></Texto>
-<<<<<<< HEAD
-      <IconButton className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" icon={<IoCaretBack className={buttonStyle.icon} />} />
-      <IconButton className={buttonStyle.ajudaButton}  text="Ajuda" href="/" id="ajuda" icon={<FiHelpCircle className={buttonStyle.icon} />} />
-      <div className={stylesText.container}>
-      <div> 
-      <QrCode className={stylesText.QrCode} titulo = "QR CODE"  url="" text="Aponte a Câmera do celular aqui"/>
-      </div>
-      <div>
-      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Jogador 1'/>
-      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
-      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
-      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
-      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
-      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
-      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
-      <CaixaDeTexto className={stylesText.caixaDeTextoDireita} text='Aguardando Jogadores'/>
-      </div>
-      </div>
-      <Button className={buttonStyle.buttonIniciarPartida} text="Iniciar Jogo" href="" id="" />
-=======
       <Button className={buttonStyle.voltarButton}  text="Voltar" href="criar_sala" id="voltar" />
       
       
