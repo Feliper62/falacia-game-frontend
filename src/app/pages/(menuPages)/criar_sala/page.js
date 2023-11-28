@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Texto from '@/app/components/Texto';
-import CaixaTexto from '../../../components/InputTexto';
+import InputText from '../../../components/InputText';
 import Button from '../../../components/Button';
 import styles from '../../../styles/Button.module.css'
 import styles2 from '../../../styles/Texto.module.css'
@@ -16,7 +16,7 @@ export default function CrirSala(){
    <>
      <Texto className={styles2.tituloResponsivo} text='Criar Sala' />
     
-     <CaixaTexto text="Apelido:" placeholder="Digite seu apelido"/>
+     <InputText text="Apelido:" placeholder="Digite seu apelido"/>
      <Button className={styles.Button} text="Criar Sala" href="host" id="host" />
    </>
    )

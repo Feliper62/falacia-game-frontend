@@ -18,6 +18,7 @@ export default function GrupoHost(){
     return (
     <>
       <Texto className={styles.titulo} text='falácia'></Texto>
+<<<<<<< HEAD
       <IconButton className={buttonStyle.voltarButton}  text="Voltar" href="/" id="voltar" icon={<IoCaretBack className={buttonStyle.icon} />} />
       <IconButton className={buttonStyle.ajudaButton}  text="Ajuda" href="/" id="ajuda" icon={<FiHelpCircle className={buttonStyle.icon} />} />
       <div className={stylesText.container}>
@@ -36,6 +37,11 @@ export default function GrupoHost(){
       </div>
       </div>
       <Button className={buttonStyle.buttonIniciarPartida} text="Iniciar Jogo" href="" id="" />
+=======
+      <Button className={buttonStyle.voltarButton}  text="Voltar" href="criar_sala" id="voltar" />
+      
+      
+>>>>>>> d09fdb970f2e10465a89b805007b52f9544ed7ed
     </>
     )
   }
