@@ -11,7 +11,7 @@ export const api_usuarios = {
     return await response.json();
   },
   criar: async function (body) {
-    let response = await fetch(api_usuarios.url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
+    let response = await fetch(api_usuarios.url, {method: 'POST', headers: {'Content-Type': 'application/json'}, mode:'no-cors' , body: JSON.stringify(body)});
     return await response.json();
   },
   atualizar: async function (body) {
