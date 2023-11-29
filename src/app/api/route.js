@@ -11,15 +11,15 @@ export const api_usuarios = {
     return await response.json();
   },
   criar: async function (body) {
-    let response = await fetch(api_usuarios.url, {method: 'POST', body: body});
+    let response = await fetch(api_usuarios.url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
     return await response.json();
   },
   atualizar: async function (body) {
-    let response = await fetch(api_usuarios.url, {method: 'PUT', body: body});
+    let response = await fetch(api_usuarios.url, {method: 'PUT', body: JSON.stringify(body)});
     return await response.json();
   },
   deletar: async function (id) {
-    let response = await fetch(api_usuarios.url + id + '/', {method: 'DELETE', body: body});
+    let response = await fetch(api_usuarios.url + id + '/', {method: 'DELETE'});
     return await response.json();
   }
 };
@@ -39,15 +39,15 @@ export const api_sessoes = {
     return await response.json();
   },
   criar: async function (body) {
-    let response = await fetch(api_sessoes.url, {method: 'POST', body: body});
+    let response = await fetch(api_sessoes.url, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)});
     return await response.json();
   },
   atualizar: async function (body) {
-    let response = await fetch(api_sessoes.url, {method: 'PUT', body: body});
+    let response = await fetch(api_sessoes.url, {method: 'PUT', body: JSON.stringify(body)});
     return await response.json();
   },
   deletar: async function (id) {
-    let response = await fetch(sessoes.url + id + '/', {method: 'DELETE', body: body});
+    let response = await fetch(sessoes.url + id + '/', {method: 'DELETE'});
     return await response.json();
   }
 };
