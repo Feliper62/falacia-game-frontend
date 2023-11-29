@@ -20,7 +20,7 @@ import stylesText from '@/app/styles/CaixaDeTexto.module.css'
 
 
 export default async function TesteJogadores() {
-  const usuarios = await api_sessoes.retorna_usuarios('8BXCF4');
+  const usuarios = await api_sessoes.retorna_usuarios('NILJG8');
   console.log(usuarios)
   const totalUsuarios = 8;
   // Criando um array de 8 espaços vazios

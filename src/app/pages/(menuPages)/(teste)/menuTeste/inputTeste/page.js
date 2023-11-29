@@ -58,74 +58,169 @@ export default function InputTeste() {
 */
 /*
 'use client'
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { api_usuarios } from '@/app/api/route';
+
 export default function InputTeste(){
-const handleSubmit = async (e) => {
- e.preventDefault();
+  const [apelido, setApelido] = useState('');
+  const router = useRouter();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+      const response = await api_usuarios.criar({
+        apelido: apelido,
+        mentira: "mentira",
+        pontuacao: 0,
+        voto: "1",
+        tipo: 'JOGADOR',
+        sessao: 'NILJG8',
+      });
 
- const { apelido } = e.target;
-
- try {
-    const response = await api_usuarios.criar({
-      apelido: api_usuarios.value,
-      mentira: '',
-      pontuacao: 1,
-      voto: 1,
-      tipo: 'JOGADOR',
-      sessao: '8BXCF4',
-    });
-
-    console.log(response);
- } catch (error) {
-    console.error(error);
- }
+      console.log(response);
+      router.push('/pages/menuTeste/listaJogadores')
+  } catch (error) {
+      console.error(error);
+  }
 };
 
 return (
- <form onSubmit={handleSubmit}>
-    <input name="apelido" type="text" placeholder="Digite seu apelido" />
-    <button type="submit">Enviar</button>
- </form>
+  <form onSubmit={handleSubmit}>
+    <label>
+      Digite seu apelido:
+      <input
+        type="text"
+        value={apelido}
+        onChange={(e) => setApelido(e.target.value)}
+        placeholder="Seu apelido"
+      />
+    </label>
+    <button type="submit">Registrar Apelido</button>
+  </form>
 );
 }*/
-'use client';
-import { api_usuarios } from '@/app/api/route';
-import React from 'react';
 
-export default function Formulario() {
+/*import axios from 'axios';
+
+export default async function cadastroUsuario(apelido, mentira, pontuacao, voto, tipo, sessao) {
+    try {
+        const response = await axios.post('https://falacia-game-backend-production.up.railway.app/usuarios/', {
+          apelido,
+          mentira,
+          pontuacao,
+          voto,
+          tipo,
+          sessao,
+        });
+        console.log('Dados enviados com sucesso:', response.data);
+    } catch (error) {
+        console.error('Erro ao enviar os dados:', error);
+    }
+} 
+cadastroUsuario('exemplojogador765', 'é verdade ?', 0, '1', 'JOGADOR', 'NILJG8');*/
+/*
+import axios from 'axios';
+import readlineSync from 'readline-sync';
+
+export default async function cadastroUsuario(apelido, mentira, pontuacao, voto, tipo, sessao) {
+    try {
+        const response = await axios.post('https://falacia-game-backend-production.up.railway.app/usuarios/', {
+          apelido,
+          mentira,
+          pontuacao,
+          voto,
+          tipo,
+          sessao,
+        });
+        console.log('Dados enviados com sucesso:', response.data);
+    } catch (error) {
+        console.error('Erro ao enviar os dados:', error);
+    }
+}
+
+// Obtenha o valor do apelido a partir da entrada do usuário no Node.js
+const apelidoUsuario = readlineSync.question('Digite o apelido do usuário:');
+
+cadastroUsuario(apelidoUsuario, 'é verdade ?', 0, '1', 'JOGADOR', 'NILJG8');*/
+'use client'
+import { useState } from 'react';
+import axios from 'axios';
+
+export default function CadastroUsuarioForm() {
+  const [dadosFormulario, setDadosFormulario] = useState({
+    apelido: ' ',
+    mentira: 'é verdade ?',
+    pontuacao: 0,
+    voto: '1',
+    tipo: 'JOGADOR',
+    sessao: 'NILJG8',
+  });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = {
-      apelido: formData.get('apelido'),
-      // Adicione outros campos do formulário, se houver
-    };
 
     try {
-      const response = await api_usuarios.criar({
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+      console.log('Tratando o submit do formulário. Dados:', dadosFormulario);
 
-      if (response.ok) {
-        console.log('Dados enviados com sucesso!');
-        // Aqui você pode lidar com o sucesso do envio, redirecionamento, etc.
-      } else {
-        console.error('Erro ao enviar dados:', response.statusText);
-      }
+      // Chamar a função cadastroUsuario passando os dados do formulário
+      await cadastroUsuario(
+        dadosFormulario.apelido,
+        dadosFormulario.mentira,
+        dadosFormulario.pontuacao,
+        dadosFormulario.voto,
+        dadosFormulario.tipo,
+        dadosFormulario.sessao
+      );
+
+      // Outras ações após o envio bem-sucedido, se necessário
+
     } catch (error) {
-      console.error('Erro ao enviar dados:', error);
+      console.error('Erro ao enviar os dados:', error);
     }
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setDadosFormulario((prevDados) => ({
+      ...prevDados,
+      [name]: value,
+    }));
+  };
+
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="apelido" placeholder="Apelido" />
-      {/* Adicione outros campos do formulário, se houver */}
-      <button type="submit">Enviar</button>
-    </form>
+    <div>
+      <h1>Cadastro de Usuário</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Apelido:
+          <input
+            type="text"
+            name="apelido"
+            value={dadosFormulario.apelido}
+            onChange={handleChange}
+          />
+        </label>
+        <button type="submit">Enviar Cadastro</button>
+      </form>
+    </div>
   );
+}
+
+async function cadastroUsuario(apelido, mentira, pontuacao, voto, tipo, sessao) {
+  try {
+    const response = await axios.post(
+      'https://falacia-game-backend-production.up.railway.app/usuarios/',
+      {
+        apelido,
+        mentira,
+        pontuacao,
+        voto,
+        tipo,
+        sessao,
+      }
+    );
+    console.log('Dados enviados com sucesso:', response.data);
+  } catch (error) {
+    console.error('Erro ao enviar os dados:', error);
+  }
 }
